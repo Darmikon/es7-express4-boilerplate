@@ -1,0 +1,561 @@
+21:28:38 ERROR  Error: HttpError
+  
+  - HttpError.js:14 HttpError
+    D:/apaserver/www/koajs/17_07_01_express/src/utils/HttpError.js:14:12
+  
+  - index.js:11 
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:11:8
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - route.js:137 next
+    [17_07_01_express]/[express]/lib/router/route.js:137:13
+  
+  - route.js:112 Route.dispatch
+    [17_07_01_express]/[express]/lib/router/route.js:112:3
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - index.js:281 
+    [17_07_01_express]/[express]/lib/router/index.js:281:22
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - index.js:174 Function.handle
+    [17_07_01_express]/[express]/lib/router/index.js:174:3
+  
+
+21:57:40 ERRORuncaughtException: Can't set headers after they are sent.
+	_http_outgoing.js on line 371
+21:57:40 ERROR  Error: Can't set headers after they are sent.
+  
+  - response.js:730 ServerResponse.header
+    [17_07_01_express]/[express]/lib/response.js:730:10
+  
+  - response.js:170 ServerResponse.send
+    [17_07_01_express]/[express]/lib/response.js:170:12
+  
+  - response.js:967 done
+    [17_07_01_express]/[express]/lib/response.js:967:10
+  
+  - utils.js:26 Immediate.<anonymous>
+    [17_07_01_express]/[express-handlebars]/lib/utils.js:26:13
+  
+
+22:16:55 ERROR  Error: bbbb
+  
+  - index.js:16 _callee$
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:16:11
+  
+  - next_tick.js:109 process._tickCallback
+    internal/process/next_tick.js:109:7
+  
+
+22:21:55 ERROR  Error: error
+  
+  - app.js:37 
+    D:/apaserver/www/koajs/17_07_01_express/src/app.js:37:11
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+22:22:07 ERROR  Error: error
+  
+  - app.js:36 
+    D:/apaserver/www/koajs/17_07_01_express/src/app.js:36:11
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+22:23:15 ERROR  Error: error
+  
+  - index.js:18 _callee$
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:18:17
+  
+  - next_tick.js:64 runMicrotasksCallback
+    internal/process/next_tick.js:64:5
+  
+  - next_tick.js:73 _combinedTickCallback
+    internal/process/next_tick.js:73:7
+  
+  - next_tick.js:104 process._tickCallback
+    internal/process/next_tick.js:104:9
+  
+
+22:33:05 ERROR  Error: error
+  
+  - app.js:36 
+    D:/apaserver/www/koajs/17_07_01_express/src/app.js:36:11
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+22:36:36 ERROR  Error: error
+  
+  - app.js:36 
+    D:/apaserver/www/koajs/17_07_01_express/src/app.js:36:11
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+22:36:52 ERROR  Error: bbbb
+  
+  - index.js:26 _callee2$
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:26:9
+  
+  - index.js:24 
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:24:23
+  
+  - index.js:23 
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:23:31
+  
+
+00:44:35 ERRORuncaughtException: D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js: Duplicate declaration "wrap"
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\babel-core\lib\transformation\file\index.js on line 427
+01:16:30 ERROR  Error: error
+  
+  - app.js:36 
+    D:/apaserver/www/koajs/17_07_01_express/src/app.js:36:11
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+01:16:38 ERROR  Error: error
+  
+  - app.js:36 
+    D:/apaserver/www/koajs/17_07_01_express/src/app.js:36:11
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+01:17:16 ERROR  Error: error mock3
+  
+  - app.js:36 
+    D:/apaserver/www/koajs/17_07_01_express/src/app.js:36:11
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+01:41:26 ERRORuncaughtException: Cannot find module './module'
+	module.js on line 470
+01:41:46 ERRORuncaughtException: Cannot find module '../utils/HttpError'
+	module.js on line 470
+01:42:45 ERRORuncaughtException: Cannot find module './module'
+	module.js on line 470
+01:43:11 ERRORuncaughtException: Cannot find module './module'
+	module.js on line 470
+01:43:47 ERRORuncaughtException: Cannot find module './module'
+	module.js on line 470
+01:43:52 ERRORuncaughtException: Cannot find module '../module/HttpError'
+	module.js on line 470
+01:44:16 ERRORuncaughtException: Cannot find module '../module/HttpError'
+	module.js on line 470
+01:45:56 ERRORuncaughtException: Cannot find module './HttpError'
+	module.js on line 470
+01:47:14 ERRORuncaughtException: Cannot find module './HttpError'
+	module.js on line 470
+01:47:43 ERRORuncaughtException: Cannot find module './HttpError'
+	module.js on line 470
+01:48:08 ERROR  Error: error mock3
+  
+  - error-handlers.js:12 
+    D:/apaserver/www/koajs/17_07_01_express/src/module/error-handlers.js:12:13
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+01:48:10 ERROR  Error: error mock2
+  
+  - error-handlers.js:12 
+    D:/apaserver/www/koajs/17_07_01_express/src/module/error-handlers.js:12:13
+  
+  - layer.js:71 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:71:5
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+  - layer.js:67 Layer.handle_error
+    [17_07_01_express]/[express]/lib/router/layer.js:67:12
+  
+  - index.js:315 trim_prefix
+    [17_07_01_express]/[express]/lib/router/index.js:315:13
+  
+  - index.js:284 
+    [17_07_01_express]/[express]/lib/router/index.js:284:7
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+01:48:15 ERROR  Error: No default engine was specified and no extension was provided.
+  
+  - view.js:62 new View
+    [17_07_01_express]/[express]/lib/view.js:62:11
+  
+  - application.js:570 Function.render
+    [17_07_01_express]/[express]/lib/application.js:570:12
+  
+  - response.js:971 ServerResponse.render
+    [17_07_01_express]/[express]/lib/response.js:971:7
+  
+  - index.js:7 
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:7:7
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - route.js:137 next
+    [17_07_01_express]/[express]/lib/router/route.js:137:13
+  
+  - route.js:112 Route.dispatch
+    [17_07_01_express]/[express]/lib/router/route.js:112:3
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - index.js:281 
+    [17_07_01_express]/[express]/lib/router/index.js:281:22
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+
+01:48:47 ERRORuncaughtException: exphbs is not defined
+	D:/apaserver/www/koajs/17_07_01_express/src/config/base.js on line 48
+01:48:59 ERRORuncaughtException: exphbs is not defined
+	D:/apaserver/www/koajs/17_07_01_express/src/config/base.js on line 48
+01:52:06 ERROR  Error: Failed to lookup view "index" in views directory "D:\apaserver\www\koajs\17_07_01_express\src"
+  
+  - application.js:580 Function.render
+    [17_07_01_express]/[express]/lib/application.js:580:17
+  
+  - response.js:971 ServerResponse.render
+    [17_07_01_express]/[express]/lib/response.js:971:7
+  
+  - index.js:7 
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:7:7
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - route.js:137 next
+    [17_07_01_express]/[express]/lib/router/route.js:137:13
+  
+  - route.js:112 Route.dispatch
+    [17_07_01_express]/[express]/lib/router/route.js:112:3
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - index.js:281 
+    [17_07_01_express]/[express]/lib/router/index.js:281:22
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+
+01:53:02 ERROR  Error: Failed to lookup view "index" in views directory "D:\apaserver\www\koajs\17_07_01_express\src"
+  
+  - application.js:580 Function.render
+    [17_07_01_express]/[express]/lib/application.js:580:17
+  
+  - response.js:971 ServerResponse.render
+    [17_07_01_express]/[express]/lib/response.js:971:7
+  
+  - index.js:7 
+    D:/apaserver/www/koajs/17_07_01_express/src/routes/index.js:7:7
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - route.js:137 next
+    [17_07_01_express]/[express]/lib/router/route.js:137:13
+  
+  - route.js:112 Route.dispatch
+    [17_07_01_express]/[express]/lib/router/route.js:112:3
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - index.js:281 
+    [17_07_01_express]/[express]/lib/router/index.js:281:22
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+
+14:46:26 ERRORuncaughtException: nocache is not defined
+	D:/apaserver/www/koajs/17_07_01_express/src/middleware/index.js on line 4
+15:48:02 ERRORuncaughtException: app.use() requires middleware functions
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\express\lib\application.js on line 210
+15:48:35 ERRORuncaughtException: app.use() requires middleware functions
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\express\lib\application.js on line 210
+15:48:56 ERRORuncaughtException: app.use() requires middleware functions
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\express\lib\application.js on line 210
+15:50:15 ERRORuncaughtException: D:/apaserver/www/koajs/17_07_01_express/src/module/error-handlers.js: Unexpected token, expected , (6:20)
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\babylon\lib\index.js on line 4454
+15:50:30 ERRORuncaughtException: D:/apaserver/www/koajs/17_07_01_express/src/module/error-handlers.js: Unexpected token, expected , (6:20)
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\babylon\lib\index.js on line 4454
+15:50:37 ERRORuncaughtException: D:/apaserver/www/koajs/17_07_01_express/src/module/error-handlers.js: Unexpected token, expected , (6:20)
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\babylon\lib\index.js on line 4454
+15:50:38 ERRORuncaughtException: D:/apaserver/www/koajs/17_07_01_express/src/module/error-handlers.js: Unexpected token, expected , (6:20)
+	D:\apaserver\www\koajs\17_07_01_express\node_modules\babylon\lib\index.js on line 4454
+15:57:34 ERROR  Error: Failed to lookup view "index" in views directory "D:\apaserver\www\koajs\17_07_01_express\dist\views"
+  
+  - application.js:580 Function.render
+    [17_07_01_express]/[express]/lib/application.js:580:17
+  
+  - response.js:971 ServerResponse.render
+    [17_07_01_express]/[express]/lib/response.js:971:7
+  
+  - index.js:22 
+    D:/apaserver/www/koajs/17_07_01_express/dist/routes/index.js:22:7
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - route.js:137 next
+    [17_07_01_express]/[express]/lib/router/route.js:137:13
+  
+  - route.js:112 Route.dispatch
+    [17_07_01_express]/[express]/lib/router/route.js:112:3
+  
+  - layer.js:95 Layer.handle [as handle_request]
+    [17_07_01_express]/[express]/lib/router/layer.js:95:5
+  
+  - index.js:281 
+    [17_07_01_express]/[express]/lib/router/index.js:281:22
+  
+  - index.js:335 Function.process_params
+    [17_07_01_express]/[express]/lib/router/index.js:335:12
+  
+  - index.js:275 next
+    [17_07_01_express]/[express]/lib/router/index.js:275:10
+  
+
+17:00:46 ERRORuncaughtException: Cannot find module './connect-history-api-fallback-custom'
+	module.js on line 470
+17:00:59 ERRORuncaughtException: Cannot find module './connect-history-api-fallback-custom'
+	module.js on line 470
