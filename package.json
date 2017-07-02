@@ -4,6 +4,18 @@
   "main": "index.js",
   "author": "Damikon",
   "license": "MIT",
+  "keywords": [
+    "es6",
+    "es7",
+    "node",
+    "nodejs",
+    "expressjs",
+    "express",
+    "express4",
+    "boilerplate",
+    "starter",
+    "javascript"
+  ],
   "scripts": {
     "start": "npm-run-all --parallel inspector debug",
     "start:brk": "npm-run-all --parallel inspector debug:brk",
