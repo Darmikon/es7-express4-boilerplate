@@ -5,10 +5,12 @@ import routes from './routes';
 import logger from './module/logger';
 import middleware from './middleware';
 import errorHandlers from './module/error-handlers';
+import swagger from './module/swagger';
 
 const app = express();
 
 base(app);
+swagger(app);
 app.use(...middleware);
 app.use(routes);
 errorHandlers(app);
