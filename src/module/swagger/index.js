@@ -1,16 +1,28 @@
 import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
-//import swaggerDocument from './swagger.json';
+import swaggerDocument from './swagger.json';
 
 export default function (app) {
-    //without jsdoc from swagger.json
-  //app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
   const options = {
     swaggerDefinition: {
       info: {
         title: 'API', // Title (required)
-        version: '2.0.0', // Version (required)
+        version: '1.0.0', // Version (required)
+        termsOfService: '...',
+        contact: {
+          email: 'dev@gmail.com'
+        }
       },
+      tags: [
+        {
+          name: 'pet',
+          description: 'Title for pet ENDPOINT',
+          externalDocs: {
+            description: 'Find out more',
+            url: 'http://swagger.io'
+          }
+        }
+      ],
     },
     apis: [
       './src/module/swagger/swagger.yaml',
@@ -18,7 +30,8 @@ export default function (app) {
       './src/module/swagger/parameters.yaml'
     ],
   };
-    // Initialize swagger-jsdoc -> returns validated swagger spec in json format
+  //  // Initialize swagger-jsdoc -> returns validated swagger spec in json format
   const swaggerSpec = swaggerJSDoc(options);
-  app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.use('/swagger-demo', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 }
