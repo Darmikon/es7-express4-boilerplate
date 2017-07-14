@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import bodyParser from 'body-parser';
 import HttpError from '../module/http-error';
+import { sql } from 'pg-extra';
+import pool from '../module/db/pg';
 
 const routes = Router({ mergeParams: true });
 
@@ -35,6 +37,15 @@ routes.post('/mock3', bodyParser.json(), (req, res, next) => {
   res.send(req.body);
 });
 
+routes.post('/pg', bodyParser.json(), (req, res, next) => {
+  // pool.query()
+  if (!req.is('json')) {
+    return next(HttpError(400));
+  }
+  // console.log(req.query);
+  res.send(req.body);
+});
+
 /**
  * @swagger
  * /login:
@@ -57,8 +68,17 @@ routes.post('/mock3', bodyParser.json(), (req, res, next) => {
  *       200:
  *         description: login
  */
-routes.post('/login', (req, res) => {
-  res.json(req.body);
+routes.get('/login', async (req, res, next) => {
+  try {
+    const result = await pool.one(sql`
+    SELECT *
+    FROM todo.users`);
+  } catch (e) {
+    console.log('77 mock.js');
+    return next(e);
+  }
+
+  // res.json(req.body);
 });
 
 export default routes;

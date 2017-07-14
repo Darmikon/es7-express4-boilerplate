@@ -10,12 +10,12 @@ let base = {
   app: {
     env,
     root: path.resolve(__dirname, '../'),
-    html5HistoryAPI: true,
+    html5HistoryAPI: false,
   },
   postgres: {
-    user: 'foo', //env var: PGUSER
-    database: 'my_db', //env var: PGDATABASE
-    password: 'secret', //env var: PGPASSWORD
+    user: 'PGUSER', //env var: PGUSER
+    database: 'test', //env var: PGDATABASE
+    password: '', //env var: PGPASSWORD
     host: 'localhost', // Server hosting the postgres database
     port: 5432, //env var: PGPORT
     max: 10, // max number of clients in the pool

@@ -13,6 +13,6 @@ import logger from '../module/logger';
 export default [
   expressLogging(logger),
   config.app.html5HistoryAPI
-    ? history({ index: '/', ignoredEnpoings: ['/api'] })
+    ? history({ index: '/', ignoredEndpoints: ['/api'] })
     : identity
 ];
