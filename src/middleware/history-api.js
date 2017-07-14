@@ -1,7 +1,7 @@
 /*
-* I will also monitor X-Requested-With:XMLHttpRequest header in addition to general workflow
-* ignoredEndpoings: ['/api'] option was added
-* */
+ * I will also monitor X-Requested-With:XMLHttpRequest header in addition to general workflow
+ * ignoredEndpoings: ['/api'] option was added
+ * */
 
 import url from 'url';
 
@@ -76,12 +76,12 @@ export default function historyApiFallback(options) {
     }
 
     if (Array.isArray(options.ignoredEndpoints)) {
-      options.ignoredEndpoints.any((str) => {
+      options.ignoredEndpoints.some((str) => {
         if (parsedUrl.pathname.indexOf(str) !== -1) {
           logger(
             'Not rewriting',
-            method,
-            reqUrl,
+            req.method,
+            req.url,
             'because it is ingored request.'
           );
           return next();
