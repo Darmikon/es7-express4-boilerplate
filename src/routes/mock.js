@@ -70,11 +70,11 @@ routes.post('/pg', bodyParser.json(), (req, res, next) => {
  */
 routes.get('/login', async (req, res, next) => {
   try {
-    const result = await pool.one(sql`
-    SELECT *
-    FROM todo.users`);
+    const result = await pool.many(sql`
+      SELECT * FROM todo.users
+    `);
+    res.send(result);
   } catch (e) {
-    console.log('77 mock.js');
     return next(e);
   }
 

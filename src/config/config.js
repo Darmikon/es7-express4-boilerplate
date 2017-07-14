@@ -13,9 +13,9 @@ let base = {
     html5HistoryAPI: false,
   },
   postgres: {
-    user: 'PGUSER', //env var: PGUSER
-    database: 'test', //env var: PGDATABASE
-    password: '', //env var: PGPASSWORD
+    user: 'darmikon', //env var: PGUSER
+    database: 'test2', //env var: PGDATABASE
+    password: 'postgres-hero', //env var: PGPASSWORD
     host: 'localhost', // Server hosting the postgres database
     port: 5432, //env var: PGPORT
     max: 10, // max number of clients in the pool
