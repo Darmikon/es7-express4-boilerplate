@@ -1,5 +1,5 @@
-import { Router } from 'express';
 import cors from 'cors';
+import Router from '../module/api-router';
 import api from './api';
 
 const routes = Router();

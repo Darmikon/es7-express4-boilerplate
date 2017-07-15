@@ -1,12 +1,12 @@
-import { Router } from 'express';
 import bodyParser from 'body-parser';
-import HttpError from '../module/http-error';
 import { sql } from 'pg-extra';
+import HttpError from '../module/http-error';
 import pool from '../module/db/pg';
+import Router from '../module/api-router';
 
 const routes = Router({ mergeParams: true });
 
-routes.get('/mock1', (req, res, next) => {
+routes.get('/mock1', async (req, res, next) => {
   // res.send(403); //write to response this text only
   return next(HttpError(403, 'custom'));
 
@@ -29,7 +29,7 @@ routes.get('/mock3', wrap(async (req, res, next) => {
   // throw new Error('bbbb');
 }));
 
-routes.post('/mock3', bodyParser.json(), (req, res, next) => {
+routes.post('/mock3', bodyParser.json(), async (req, res, next) => {
   if (!req.is('json')) {
     return next(HttpError(400));
   }
@@ -37,7 +37,7 @@ routes.post('/mock3', bodyParser.json(), (req, res, next) => {
   res.send(req.body);
 });
 
-routes.post('/pg', bodyParser.json(), (req, res, next) => {
+routes.post('/pg', bodyParser.json(), async (req, res, next) => {
   // pool.query()
   if (!req.is('json')) {
     return next(HttpError(400));
@@ -69,16 +69,10 @@ routes.post('/pg', bodyParser.json(), (req, res, next) => {
  *         description: login
  */
 routes.get('/login', async (req, res, next) => {
-  try {
-    const result = await pool.many(sql`
+  const result = await pool.many(sql`
       SELECT * FROM todo.users
     `);
-    res.send(result);
-  } catch (e) {
-    return next(e);
-  }
-
-  // res.json(req.body);
+  res.send(result);
 });
 
 export default routes;

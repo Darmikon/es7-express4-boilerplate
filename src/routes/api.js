@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import Router from '../module/api-router';
 import Http from '../module/http-error';
 import mock from './mock';
 //†import
