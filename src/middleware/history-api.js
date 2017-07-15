@@ -80,8 +80,8 @@ export default function historyApiFallback(options) {
         if (parsedUrl.pathname.indexOf(str) !== -1) {
           logger(
             'Not rewriting',
-            method,
-            reqUrl,
+            req.method,
+            req.url,
             'because it is ingored request.'
           );
           return true;
